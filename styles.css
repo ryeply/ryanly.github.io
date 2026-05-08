@@ -71,7 +71,7 @@ nav a:hover {
 .tagline {
     font-size: 1.85rem;
     margin-top: 0.5rem;
-    color: #00cc88;
+    color: #CAEFD9;
 }
 
 .subline {
@@ -124,7 +124,7 @@ h2 {
     color: #fff;
 }
 
-/* About Section - Smaller images on the right */
+/* About */
 .about-content {
     display: grid;
     grid-template-columns: 1fr 380px;
@@ -159,7 +159,7 @@ h2 {
 
 .project-header {
     width: 100vw;
-    height: 380px;
+    height: 420px;           /* Slightly taller as requested */
     object-fit: cover;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -179,7 +179,7 @@ h2 {
 }
 
 .meta {
-    color: #00cc88;
+    color: #CAEFD9;
     font-size: 1rem;
     margin-bottom: 1.8rem;
 }
@@ -196,7 +196,7 @@ h2 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Contact */
+/* Contact Button - Rectangular */
 .contact {
     text-align: center;
     background: #111;
@@ -206,16 +206,16 @@ h2 {
     display: inline-block;
     margin-top: 2rem;
     padding: 16px 44px;
-    border: 2px solid #00cc88;
-    color: #00cc88;
-    border-radius: 50px;
+    border: 2px solid #CAEFD9;
+    color: #CAEFD9;
+    border-radius: 8px;           /* Rectangular style */
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s;
 }
 
 .btn:hover {
-    background: #00cc88;
+    background: #CAEFD9;
     color: #0a0a0a;
 }
 
@@ -233,15 +233,12 @@ footer {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
     .about-images img {
         max-height: 220px;
     }
-    
     .project-header {
-        height: 280px;
+        height: 320px;
     }
-    
     .hero-content h2 {
         font-size: 3.4rem;
     }
