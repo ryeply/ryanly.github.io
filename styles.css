@@ -116,31 +116,30 @@ h2 {
     color: #fff;
 }
 
-/* About - Text left + smaller images right */
+/* About Section */
 .about-content {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: start;
 }
 
 .about-text p {
-    margin-bottom: 1.6rem;
-    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
 }
 
 .about-images {
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1.8rem;
 }
 
 .about-images img {
     width: 100%;
-    max-height: 260px;           /* Controls the smaller size */
-    object-fit: cover;
-    border-radius: 4px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    max-width: 380px;           /* Smaller size to match project images */
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    align-self: flex-start;
 }
 
 /* Projects */
@@ -150,7 +149,7 @@ h2 {
 
 .project-header {
     width: 100vw;
-    height: 380px;
+    height: 480px;              /* Increased height as requested */
     object-fit: cover;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -183,6 +182,7 @@ h2 {
 
 .project-images img {
     width: 100%;
+    max-width: 380px;           /* Consistent small image size */
     border-radius: 6px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
@@ -224,5 +224,7 @@ footer {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    .project-header { height: 280px; }
+    .project-header { height: 320px; }
+    .about-images img,
+    .project-images img { max-width: 100%; }
 }
