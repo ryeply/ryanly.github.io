@@ -3,7 +3,7 @@
 body {
     font-family: 'Inter', system-ui, sans-serif;
     background: #0a0a0a;
-    color: #ffffff;                    /* Pure white text as requested */
+    color: #d8d8d8;
     line-height: 1.8;
 }
 
@@ -29,7 +29,6 @@ nav {
 nav h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.7rem;
-    color: #ffffff;
 }
 
 nav ul {
@@ -42,13 +41,9 @@ nav a {
     color: #bbb;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
 }
 
-nav a:hover,
-nav a.active {
-    color: #00cc88;                    /* Green accent */
-}
+nav a:hover { color: #ffffff; }
 
 /* Hero */
 .hero {
@@ -118,7 +113,7 @@ h2 {
     font-size: 2.9rem;
     text-align: center;
     margin-bottom: 5rem;
-    color: #ffffff;
+    color: #fff;
 }
 
 /* About - Smaller images */
@@ -131,7 +126,6 @@ h2 {
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: #ffffff;
 }
 
 .about-images {
@@ -142,9 +136,9 @@ h2 {
 
 .about-images img {
     width: 100%;
-    max-width: 300px;           /* Smaller to match reference better */
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 280px;           /* Smaller to match reference */
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 /* Projects */
@@ -165,6 +159,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
+    align-items: start;
 }
 
 .project-text h3 {
@@ -180,30 +175,28 @@ h2 {
 
 .project-images img {
     width: 100%;
-    max-width: 300px;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 280px;           /* Consistent with About images */
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
-/* Simplified Contact Link */
-.contact {
-    text-align: center;
-    background: #111;
-}
-
-.contact-link {
+/* Contact Button - Rectangular */
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 16px 40px;
+    border: 2px solid #00cc88;
     color: #00cc88;
+    border-radius: 6px;           /* Rectangular look */
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
-    border-bottom: 2px solid #00cc88;
-    padding-bottom: 4px;
     transition: all 0.3s;
+    font-size: 1.05rem;
 }
 
-.contact-link:hover {
-    color: #ffffff;
-    border-color: #ffffff;
+.btn:hover {
+    background: #00cc88;
+    color: #0a0a0a;
 }
 
 footer {
