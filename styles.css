@@ -99,10 +99,10 @@ nav a:hover { color: #ffffff; }
     100% { transform: translateY(0); }
 }
 
-/* Project Header - Taller now */
+/* Project Header - Full width, narrow height */
 .project-header {
     width: 100vw;
-    height: 460px;           /* Increased height */
+    height: 380px;           /* Adjust this value to control narrowness */
     object-fit: cover;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -110,28 +110,7 @@ nav a:hover { color: #ffffff; }
     border-radius: 0;
 }
 
-/* Contact Button - Rectangular */
-.btn {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 16px 48px;
-    border: 2px solid #00cc88;
-    color: #00cc88;
-    border-radius: 8px;        /* Changed from 50px to rectangular */
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s;
-    font-size: 1.05rem;
-}
-
-.btn:hover {
-    background: #00cc88;
-    color: #0a0a0a;
-}
-
-/* Rest of your styles (About, Projects, Footer, etc.) */
-.section { padding: 130px 0 100px; }
-
+/* Project Content */
 .section-inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -172,12 +151,32 @@ nav a:hover { color: #ffffff; }
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Rest of styles (unchanged) */
+.section { padding: 130px 0 100px; }
 h2 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2.9rem;
     text-align: center;
     margin-bottom: 5rem;
     color: #fff;
+}
+
+.contact { text-align: center; background: #111; }
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 16px 44px;
+    border: 2px solid #00cc88;
+    color: #00cc88;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #00cc88;
+    color: #0a0a0a;
 }
 
 footer {
@@ -190,5 +189,5 @@ footer {
 /* Responsive */
 @media (max-width: 900px) {
     .project-content { grid-template-columns: 1fr; gap: 3rem; }
-    .project-header { height: 320px; }   /* Smaller on mobile */
+    .project-header { height: 280px; }
 }
