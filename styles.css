@@ -14,11 +14,11 @@ nav {
     background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(12px);
     z-index: 1000;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #1f1f1f;
 }
 
 .nav-content {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1.5rem 5%;
     display: flex;
@@ -38,12 +38,12 @@ nav ul {
 }
 
 nav a {
-    color: #ccc;
+    color: #bbb;
     text-decoration: none;
     font-weight: 500;
 }
 
-nav a:hover { color: #fff; }
+nav a:hover { color: #ffffff; }
 
 /* Hero */
 .hero {
@@ -52,25 +52,25 @@ nav a:hover { color: #fff; }
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('hero-bg.jpg') center/cover no-repeat;
 }
 
 .hero-content h2 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 5.5rem;
-    color: #fff;
-}
-
-.title {
-    font-size: 2rem;
-    color: #00cc88;
-    margin: 0.5rem 0 1.5rem;
+    font-size: 4.2rem;
+    color: #ffffff;
 }
 
 .tagline {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    color: #00cc88;
+}
+
+.subline {
+    font-size: 1.3rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 1.5rem auto 0;
     opacity: 0.9;
 }
 
@@ -86,59 +86,53 @@ nav a:hover { color: #fff; }
 
 h2 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     text-align: center;
     margin-bottom: 5rem;
-    color: #ffffff;
+    color: #fff;
 }
 
-/* About */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: center;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* Full Project Sections */
+/* Projects */
 .project {
     margin-bottom: 140px;
 }
 
-.project-hero img {
+.project-header {
     width: 100%;
-    height: 520px;
+    height: 420px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 2.5rem;
 }
 
-.project-content h3 {
-    font-size: 2.1rem;
-    margin-bottom: 0.4rem;
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.project-text h3 {
+    font-size: 1.85rem;
+    margin-bottom: 0.8rem;
 }
 
 .meta {
     color: #00cc88;
-    font-size: 1.05rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
 }
 
 .project-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    margin-top: 3rem;
 }
 
 .project-images img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Contact */
@@ -156,7 +150,7 @@ h2 {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .btn:hover {
@@ -172,8 +166,10 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .hero-content h2 { font-size: 3.8rem; }
-    .about-grid { grid-template-columns: 1fr; }
-    .project-images { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+    .project-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .hero-content h2 { font-size: 3.2rem; }
 }
