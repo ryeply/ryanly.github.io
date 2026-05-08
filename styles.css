@@ -99,26 +99,59 @@ nav a:hover { color: #ffffff; }
     100% { transform: translateY(0); }
 }
 
-/* Project Header - Full width, narrow height */
-.project-header {
-    width: 100vw;
-    height: 380px;           /* Adjust this value to control narrowness */
-    object-fit: cover;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    margin-bottom: 3rem;
-    border-radius: 0;
-}
+/* Sections */
+.section { padding: 130px 0 100px; }
 
-/* Project Content */
 .section-inner {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 5%;
 }
 
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.9rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #fff;
+}
+
+/* About - Text left + 2 images right */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.about-images img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Projects */
 .project {
     margin-bottom: 160px;
+}
+
+.project-header {
+    width: 100vw;
+    height: 380px;
+    object-fit: cover;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 3rem;
 }
 
 .project-content {
@@ -151,17 +184,11 @@ nav a:hover { color: #ffffff; }
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Rest of styles (unchanged) */
-.section { padding: 130px 0 100px; }
-h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.9rem;
+/* Contact */
+.contact {
     text-align: center;
-    margin-bottom: 5rem;
-    color: #fff;
+    background: #111;
 }
-
-.contact { text-align: center; background: #111; }
 
 .btn {
     display: inline-block;
@@ -172,6 +199,7 @@ h2 {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s;
 }
 
 .btn:hover {
@@ -188,6 +216,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .project-content { grid-template-columns: 1fr; gap: 3rem; }
+    .about-content,
+    .project-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
     .project-header { height: 280px; }
 }
