@@ -116,28 +116,31 @@ h2 {
     color: #fff;
 }
 
-/* About - Text left + 2 images right */
+/* About - Text left + smaller images right */
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     gap: 5rem;
     align-items: start;
 }
 
 .about-text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.05rem;
 }
 
 .about-images {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 1.4rem;
 }
 
 .about-images img {
     width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-height: 260px;           /* Controls the smaller size */
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 /* Projects */
