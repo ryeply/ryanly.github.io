@@ -3,7 +3,7 @@
 body {
     font-family: 'Inter', system-ui, sans-serif;
     background: #0a0a0a;
-    color: #d8d8d8;
+    color: #ffffff;                    /* Pure white text as requested */
     line-height: 1.8;
 }
 
@@ -29,6 +29,7 @@ nav {
 nav h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.7rem;
+    color: #ffffff;
 }
 
 nav ul {
@@ -41,9 +42,13 @@ nav a {
     color: #bbb;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s;
 }
 
-nav a:hover { color: #ffffff; }
+nav a:hover,
+nav a.active {
+    color: #00cc88;                    /* Green accent */
+}
 
 /* Hero */
 .hero {
@@ -113,10 +118,10 @@ h2 {
     font-size: 2.9rem;
     text-align: center;
     margin-bottom: 5rem;
-    color: #fff;
+    color: #ffffff;
 }
 
-/* About Section */
+/* About - Smaller images */
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -126,20 +131,20 @@ h2 {
 
 .about-text p {
     margin-bottom: 1.5rem;
+    color: #ffffff;
 }
 
 .about-images {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 1.6rem;
 }
 
 .about-images img {
     width: 100%;
-    max-width: 380px;           /* Smaller size to match project images */
+    max-width: 300px;           /* Smaller to match reference better */
     border-radius: 6px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    align-self: flex-start;
 }
 
 /* Projects */
@@ -149,7 +154,7 @@ h2 {
 
 .project-header {
     width: 100vw;
-    height: 480px;              /* Increased height as requested */
+    height: 480px;
     object-fit: cover;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -160,7 +165,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
-    align-items: start;
 }
 
 .project-text h3 {
@@ -174,40 +178,32 @@ h2 {
     margin-bottom: 1.8rem;
 }
 
-.project-images {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-}
-
 .project-images img {
     width: 100%;
-    max-width: 380px;           /* Consistent small image size */
+    max-width: 300px;
     border-radius: 6px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Contact */
+/* Simplified Contact Link */
 .contact {
     text-align: center;
     background: #111;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 16px 44px;
-    border: 2px solid #00cc88;
+.contact-link {
     color: #00cc88;
-    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #00cc88;
+    padding-bottom: 4px;
     transition: all 0.3s;
 }
 
-.btn:hover {
-    background: #00cc88;
-    color: #0a0a0a;
+.contact-link:hover {
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 footer {
