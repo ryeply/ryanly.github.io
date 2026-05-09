@@ -185,15 +185,18 @@ h2 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Contact */
-.contact {
-    text-align: center;
-    background: #111;
+/* Download Buttons */
+.project-downloads {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 16px 44px;
     border: 2px solid #CAEFD9;
     color: #CAEFD9;
@@ -201,11 +204,30 @@ h2 {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s;
+    font-size: 1rem;
 }
 
 .btn:hover {
     background: #CAEFD9;
     color: #0a0a0a;
+}
+
+.btn-small {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+}
+
+.project-note {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    background: #111;
 }
 
 footer {
@@ -226,5 +248,9 @@ footer {
     }
     .hero-content h2 {
         font-size: 3.4rem;
+    }
+    
+    .project-downloads {
+        flex-direction: column;
     }
 }
