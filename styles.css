@@ -126,7 +126,7 @@ h2 {
     color: #fff;
 }
 
-/* About - Text only, centered, smaller */
+/* About */
 .about-text {
     max-width: 720px;
     margin: 0 auto;
@@ -134,7 +134,7 @@ h2 {
 }
 
 .about-text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
     font-size: 1.05rem;
     font-weight: 400;
 }
@@ -155,8 +155,8 @@ h2 {
 
 .project-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5.5rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
     align-items: start;
 }
 
@@ -166,15 +166,6 @@ h2 {
     margin-bottom: 0.8rem;
 }
 
-.project-text p {
-    margin-bottom: 1.1rem;
-}
-
-.project-text p strong {
-    color: #CAEFD9;
-    font-weight: 600;
-}
-
 .meta {
     color: #CAEFD9;
     font-size: 1rem;
@@ -182,22 +173,43 @@ h2 {
     font-weight: 500;
 }
 
-.project-images {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-}
-
-.project-images img {
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-/* Contact */
-.contact {
-    text-align: center;
+.design-highlights {
+    margin: 1.5rem 0;
     background: #111;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+}
+
+.design-highlights h4 {
+    color: #CAEFD9;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.design-highlights ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.design-highlights li {
+    margin-bottom: 0.6rem;
+    padding-left: 1.25rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.design-highlights li::before {
+    content: "→";
+    color: #CAEFD9;
+    position: absolute;
+    left: 0;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
 .btn {
@@ -217,6 +229,24 @@ h2 {
     color: #0a0a0a;
 }
 
+.btn.secondary {
+    background: transparent;
+    border: 2px solid #555;
+    color: #bbb;
+}
+
+.btn.secondary:hover {
+    background: #222;
+    color: #fff;
+    border-color: #777;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    background: #111;
+}
+
 footer {
     text-align: center;
     padding: 4rem 5%;
@@ -226,10 +256,6 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .project-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
     .project-header {
         height: 320px;
     }
