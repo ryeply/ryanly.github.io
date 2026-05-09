@@ -134,7 +134,7 @@ h2 {
 }
 
 .about-text p {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.5rem;
     font-size: 1.05rem;
     font-weight: 400;
 }
@@ -156,7 +156,7 @@ h2 {
 .project-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 5.5rem;
     align-items: start;
 }
 
@@ -164,6 +164,15 @@ h2 {
     font-size: 1.9rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
+}
+
+.project-text p {
+    margin-bottom: 1.1rem;
+}
+
+.project-text p strong {
+    color: #CAEFD9;
+    font-weight: 600;
 }
 
 .meta {
