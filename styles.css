@@ -11,6 +11,10 @@ body {
     line-height: 1.8;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -285,5 +289,30 @@ footer {
     
     .project-downloads {
         flex-direction: column;
+    }
+}
+
+/* Mobile nav fixes to prevent squishing */
+@media (max-width: 768px) {
+    .nav-content {
+        padding: 1rem 4%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    nav h1 {
+        font-size: 1.35rem;
+        white-space: nowrap;
+    }
+    
+    nav ul {
+        gap: 1.1rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.2rem 0;
     }
 }
