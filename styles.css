@@ -192,23 +192,9 @@ h2 {
 /* Download Buttons */
 .project-downloads {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin: 1.5rem 0;
     flex-wrap: wrap;
-}
-
-.download-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
-}
-
-.file-info {
-    font-size: 0.75rem;
-    color: #888;
-    margin-left: 0.1rem;
-    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
 }
 
 .btn {
